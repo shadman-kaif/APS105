@@ -10,11 +10,11 @@
 int main()
 {
     double num1, num2, product, difference, sum;
-	printf("Enter two positive integers: "); 
-    scanf("%lf %lf",&num1,&num2);
-    product=num1*num2;
-    difference=num1-num2;
-    sum=sqrt(num1)+sqrt(num2);
+    printf("Enter two positive integers: "); 
+    scanf("%lf %lf", &num1, &num2);
+    product = num1 * num2;
+    difference = num1 - num2;
+    sum = sqrt(num1) + sqrt(num2);
     printf("The product is: %0.2lf, the difference is: %0.2lf, the sum of roots is: %0.2lf\n", product, difference, sum);
-	return 0;
+    return 0;
 }
