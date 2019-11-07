@@ -49,13 +49,14 @@ int main(void)
     int totalCoupons=coffeePurchases;
     int fC = 0;
     while (totalCoupons >= coupons){
-     totalCoupons = totalCoupons-coupons;
-     fC+=1;
-     totalCoupons+=1;
- }
-    if (newFreeCoffee <1)
+       totalCoupons = totalCoupons-coupons;
+       fC+=1;
+       totalCoupons+=1;
+    }
+    if (newFreeCoffee <1) {
         newFreeCoffee = 1;
-    extraCoupons=newFreeCoffee;//The number of extra coupons is the sum of the remainder between the division of coffee purchases and coupons added to the integer division of coffee purchases and coupons// 
+        extraCoupons=newFreeCoffee;//The number of extra coupons is the sum of the remainder between the division of coffee purchases and coupons added to the integer division of coffee purchases and coupons// 
+    }
     if (freeCoffee>0) {
         printf("You will be able to redeem an additional %d coffee(s) from coupons.\n", fC);
     }
